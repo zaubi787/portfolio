@@ -16,6 +16,11 @@
 		<unit id="net.bytebuddy.byte-buddy-agent.source" version="1.14.9"/>
 		<unit id="org.apache.commons.math3" version="3.6.1"/>
 		<unit id="org.apache.commons.math3.source" version="3.6.1"/>
+		<unit id="org.glassfish.jersey.containers.servlet" version="2.30.1.v20200513-1859"/>
+		<unit id="org.glassfish.jersey.containers.servlet.core" version="2.30.1.v20200513-1859"/>
+		<unit id="org.glassfish.jersey.core.jersey-common" version="2.30.1.v20200513-1859"/>
+		<unit id="org.glassfish.jersey.core.jersey-server" version="2.30.1.v20200513-1859"/>
+		<unit id="org.glassfish.jersey.inject.jersey-hk2" version="2.30.1.v20200512-1802"/>
 		<unit id="org.hamcrest.core" version="2.2.0.v20230809-1000"/>
 		<unit id="org.hamcrest.core.source" version="2.2.0.v20230809-1000"/>
 		<unit id="org.hamcrest.library" version="2.2.0.v20230809-1000"/>

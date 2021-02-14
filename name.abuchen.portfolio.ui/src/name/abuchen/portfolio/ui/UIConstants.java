@@ -29,7 +29,7 @@ public interface UIConstants
             String SAVED = "file/saved"; //$NON-NLS-1$
             String REMOVED = "file/removed"; //$NON-NLS-1$
         }
-        
+
         interface RecentFiles // NOSONAR
         {
             String UPDATED = "recent/updated"; //$NON-NLS-1$
@@ -148,7 +148,7 @@ public interface UIConstants
         String ALWAYS_DISPLAY_CURRENCY_CODE = "ALWAYS_DISPLAY_CURRENCY_CODE"; //$NON-NLS-1$
 
         /**
-         * Add "p.a." to annualized return rates 
+         * Add "p.a." to annualized return rates
          */
         String DISPLAY_PER_ANNUM = "DISPLAY_PER_ANNUM"; //$NON-NLS-1$
 
@@ -203,7 +203,7 @@ public interface UIConstants
         String LEEWAY_API_KEY = "LEEWAY_API_KEY"; //$NON-NLS-1$
 
         String TWELVEDATA_API_KEY = "TWELVEDATA_API_KEY"; //$NON-NLS-1$
-        
+
         String DIVVYDIARY_API_KEY = "DIVVYDIARY_API_KEY"; //$NON-NLS-1$
 
         String MYDIVIDENDS24_API_KEY = "MYDIVIDENDS24_API_KEY"; //$NON-NLS-1$
@@ -211,7 +211,7 @@ public interface UIConstants
         String EOD_HISTORICAL_DATA_API_KEY = "EOD_HISTORICAL_DATA_API_KEY"; //$NON-NLS-1$
 
         String COINGECKO_API_KEY = "COINGECKO_API_KEY"; //$NON-NLS-1$
-        
+
         String PORTFOLIO_REPORT_API_KEY = "PORTFOLIO_REPORT_API_KEY"; //$NON-NLS-1$
         String PORTFOLIO_REPORT_API_URL = "PORTFOLIO_REPORT_API_URL"; //$NON-NLS-1$
 
@@ -260,6 +260,12 @@ public interface UIConstants
          */
         String CSV_EXPORT_PATH = "CSV_EXPORT_PATH"; //$NON-NLS-1$
 
+        String RUN_WEB_SERVER = "RUN_WEB_SERVER"; //$NON-NLS-1$
+
+        String WEB_SERVER_PORT = "WEB_SERVER_PORT"; //$NON-NLS-1$
+
+        String WEB_SERVER_TOKEN = "WEB_SERVER_TOKEN"; //$NON-NLS-1$
+
     }
 
     interface Theme // NOSONAR
@@ -272,7 +278,7 @@ public interface UIConstants
     {
         String CLASS_NAME = "org.eclipse.e4.ui.css.CssClassName"; //$NON-NLS-1$
         String DISABLE_CSS_STYLING = "org.eclipse.e4.ui.css.disabled"; //$NON-NLS-1$
-        
+
         String HEADING1 = "heading1"; //$NON-NLS-1$
         String HEADING2 = "heading2"; //$NON-NLS-1$
         String KPI = "kpi"; //$NON-NLS-1$

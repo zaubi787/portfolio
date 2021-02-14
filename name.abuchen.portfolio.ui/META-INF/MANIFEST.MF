@@ -116,7 +116,8 @@ Import-Package: com.google.common.base,
  org.osgi.service.event,
  org.osgi.service.prefs,
  org.swtchart
-Require-Bundle: name.abuchen.portfolio;bundle-version="0.71.2",
+Require-Bundle: com.ibm.icu,
+ name.abuchen.portfolio;bundle-version="0.71.2",
  org.eclipse.nebula.cwt,
  org.eclipse.ui.forms,
  org.eclipse.e4.ui.css.core,
@@ -126,3 +127,5 @@ Require-Bundle: name.abuchen.portfolio;bundle-version="0.71.2",
 Automatic-Module-Name: name.abuchen.portfolio.ui
 Service-Component: OSGI-INF/name.abuchen.portfolio.ui.util.theme.ColorAndFontProviderImpl.xml,
  OSGI-INF/name.abuchen.portfolio.ui.theme.CustomThemeEngineManager.xml
+Export-Package: name.abuchen.portfolio.ui,
+ name.abuchen.portfolio.ui.editor

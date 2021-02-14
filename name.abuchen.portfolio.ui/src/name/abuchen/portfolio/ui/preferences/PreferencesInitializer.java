@@ -1,5 +1,7 @@
 package name.abuchen.portfolio.ui.preferences;
 
+import java.util.UUID;
+
 import org.eclipse.core.runtime.Platform;
 import org.eclipse.core.runtime.preferences.AbstractPreferenceInitializer;
 import org.eclipse.jface.preference.IPreferenceStore;
@@ -18,9 +20,9 @@ public class PreferencesInitializer extends AbstractPreferenceInitializer
         IPreferenceStore store = PortfolioPlugin.getDefault().getPreferenceStore();
         store.setDefault(UIConstants.Preferences.AUTO_UPDATE, true);
         store.setDefault(UIConstants.Preferences.UPDATE_SITE,
-                        Platform.ARCH_X86.equals(Platform.getOSArch())
-                                        ? "https://updates.portfolio-performance.info/portfolio-x86" //$NON-NLS-1$
-                                        : "https://updates.portfolio-performance.info/portfolio"); //$NON-NLS-1$
+                Platform.ARCH_X86.equals(Platform.getOSArch())
+                        ? "https://updates.portfolio-performance.info/portfolio-x86" //$NON-NLS-1$
+                        : "https://updates.portfolio-performance.info/portfolio"); //$NON-NLS-1$
         store.setDefault(UIConstants.Preferences.FORMAT_SHARES_DIGITS, 1);
         store.setDefault(UIConstants.Preferences.FORMAT_CALCULATED_QUOTE_DIGITS, 2);
         store.setDefault(UIConstants.Preferences.USE_INDIRECT_QUOTATION, true);
@@ -32,12 +34,17 @@ public class PreferencesInitializer extends AbstractPreferenceInitializer
         store.setDefault(UIConstants.Preferences.STORE_SETTINGS_NEXT_TO_FILE, false);
         store.setDefault(UIConstants.Preferences.ENABLE_EXPERIMENTAL_FEATURES, false);
         store.setDefault(UIConstants.Preferences.ENABLE_SWTCHART_PIECHARTS,
-                        Platform.getOS().equals(Platform.OS_LINUX) || (Platform.getOS().equals(Platform.OS_MACOSX)
-                                        && Platform.getOSArch().equals(Platform.ARCH_X86_64)
-                                        && compareOSVersion("13.0") >= 0)); //$NON-NLS-1$
+                Platform.getOS().equals(Platform.OS_LINUX) || (Platform.getOS().equals(Platform.OS_MACOSX)
+                        && Platform.getOSArch().equals(Platform.ARCH_X86_64)
+                        && compareOSVersion("13.0") >= 0)); //$NON-NLS-1$
         store.setDefault(UIConstants.Preferences.ALPHAVANTAGE_CALL_FREQUENCY_LIMIT, 5);
         store.setDefault(UIConstants.Preferences.CALENDAR, "default"); //$NON-NLS-1$
         store.setDefault(UIConstants.Preferences.PORTFOLIO_REPORT_API_URL, "https://api.portfolio-report.net"); //$NON-NLS-1$
+
+        store.setDefault(UIConstants.Preferences.RUN_WEB_SERVER, false);
+        store.setDefault(UIConstants.Preferences.WEB_SERVER_PORT, 5712);
+        store.setDefault(UIConstants.Preferences.WEB_SERVER_TOKEN, UUID.randomUUID().toString());
+
         store.setDefault(UIConstants.Preferences.PRESET_VALUE_TIME, PresetValues.TimePreset.MIDNIGHT.name());
 
         // Backup

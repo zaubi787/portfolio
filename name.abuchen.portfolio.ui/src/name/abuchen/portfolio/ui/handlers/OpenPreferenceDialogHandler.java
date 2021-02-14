@@ -41,6 +41,7 @@ import name.abuchen.portfolio.ui.preferences.ThemePreferencePage;
 import name.abuchen.portfolio.ui.preferences.TwelveDataPreferencePage;
 import name.abuchen.portfolio.ui.preferences.UpdatePreferencePage;
 import name.abuchen.portfolio.ui.update.UpdateHelper;
+import name.abuchen.portfolio.ui.preferences.WebServerPreferencePage;
 
 @SuppressWarnings("restriction")
 public class OpenPreferenceDialogHandler
@@ -61,8 +62,8 @@ public class OpenPreferenceDialogHandler
 
     @Execute
     public void execute(@Named(IServiceConstants.ACTIVE_SHELL) Shell shell,
-                    @Preference(UIConstants.Preferences.ENABLE_EXPERIMENTAL_FEATURES) boolean enableExperimentalFeatures,
-                    @Optional @Named(UIConstants.Parameter.PAGE) String page, IThemeEngine themeEngine)
+                        @Preference(UIConstants.Preferences.ENABLE_EXPERIMENTAL_FEATURES) boolean enableExperimentalFeatures,
+                        @Optional @Named(UIConstants.Parameter.PAGE) String page, IThemeEngine themeEngine)
     {
         PreferenceManager pm = new PreferenceManager('/');
         pm.addToRoot(new PreferenceNode("general", new GeneralPreferencePage())); //$NON-NLS-1$
@@ -91,6 +92,9 @@ public class OpenPreferenceDialogHandler
         pm.addTo("api", new PreferenceNode("quandl", new QuandlPreferencePage())); //$NON-NLS-1$ //$NON-NLS-2$
 
         pm.addToRoot(new PreferenceNode("proxy", new ProxyPreferencePage())); //$NON-NLS-1$
+        pm.addToRoot(new PreferenceNode("webserver", new WebServerPreferencePage())); //$NON-NLS-1$
+        pm.addToRoot(new PreferenceNode("updates", new UpdatePreferencePage())); //$NON-NLS-1$
+
         if (UpdateHelper.isInAppUpdateEnabled())
             pm.addToRoot(new PreferenceNode("updates", new UpdatePreferencePage())); //$NON-NLS-1$
 
