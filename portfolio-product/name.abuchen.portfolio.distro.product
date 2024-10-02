@@ -78,6 +78,7 @@
       <property name="osgi.requiredJavaVersion" value="17" />
       <property name="org.eclipse.update.reconcile" value="false" />
       <property name="eclipse.buildId" value="${unqualifiedVersion}.${buildQualifier}" />
+      <plugin id="name.abuchen.portfolio.web" autoStart="true" startLevel="4" />
    </configurations>
 
 </product>
