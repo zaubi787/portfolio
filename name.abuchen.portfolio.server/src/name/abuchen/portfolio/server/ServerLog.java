@@ -13,7 +13,9 @@ public class ServerLog
     private static final String PLUGIN_ID = "name.abuchen.portfolio.server"; //$NON-NLS-1$
 
     private ServerLog()
-    {}
+    {
+        
+    }
 
     private static void log(IStatus status)
     {

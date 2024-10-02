@@ -25,5 +25,7 @@ public class ClientContextFactory implements Factory<Client>
 
     @Override
     public void dispose(Client client) // NOSONAR
-    {}
+    {
+        
+    }
 }

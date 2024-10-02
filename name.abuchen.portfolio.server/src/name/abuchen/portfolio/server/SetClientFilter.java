@@ -25,7 +25,9 @@ public class SetClientFilter implements Filter
 
     @Override
     public void init(FilterConfig fConfig) throws ServletException // NOSONAR
-    {}
+    {
+        
+    }
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
@@ -57,6 +59,8 @@ public class SetClientFilter implements Filter
 
     @Override
     public void destroy() // NOSONAR
-    {}
+    {
+        
+    }
 
 }
