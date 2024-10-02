@@ -6,27 +6,32 @@ Bundle-Version: 0.71.2.qualifier
 Automatic-Module-Name: name.abuchen.portfolio.server
 Bundle-RequiredExecutionEnvironment: JavaSE-17
 Require-Bundle: name.abuchen.portfolio;bundle-version="0.71.2",
- org.glassfish.jersey.containers.servlet,
- org.glassfish.jersey.containers.servlet.core,
+ org.glassfish.jersey.containers.jersey-container-servlet,
+ org.glassfish.jersey.containers.jersey-container-servlet-core,
  org.glassfish.jersey.core.jersey-client,
  org.glassfish.jersey.core.jersey-common,
  org.glassfish.jersey.core.jersey-server,
  org.glassfish.jersey.inject.jersey-hk2,
- com.google.gson,
- org.eclipse.jetty.servlet,
+ org.eclipse.osgi,
+ org.eclipse.jetty.http,
  org.eclipse.jetty.io,
+ org.eclipse.jetty.security,
  org.eclipse.jetty.server,
+ org.eclipse.jetty.util,
  jakarta.ws.rs-api,
  jakarta.servlet-api,
- org.eclipse.jetty.ee10.servlet;bundle-version="12.0.14"
+ name.abuchen.portfolio.ui,
+ org.eclipse.jetty.ee10.servlet,
+ org.glassfish.hk2.api,
+ org.glassfish.hk2.osgi-resource-locator,
+ jakarta.validation.jakarta.validation-api;bundle-version="3.1.0",
+ javassist
+Import-Package: com.google.gson,
  jakarta.inject,
+ name.abuchen.portfolio.ui,
+ org.eclipse.core.runtime,
  org.eclipse.e4.core.contexts,
  org.eclipse.e4.core.di,
  org.eclipse.e4.core.di.annotations,
- org.eclipse.e4.core.di.extensions,
- org.eclipse.osgi,
- name.abuchen.portfolio.ui
-Import-Package: name.abuchen.portfolio.ui,
- org.eclipse.core.runtime
-Bundle-ActivationPolicy: lazy
+ org.eclipse.e4.core.di.extensions
 Export-Package: name.abuchen.portfolio.server
