@@ -36,6 +36,7 @@
 		<module>../name.abuchen.portfolio.feature</module>
 		<module>../name.abuchen.portfolio.bootstrap</module>
 		<module>../portfolio-product</module>
+		<module>../name.abuchen.portfolio.web</module>
 	</modules>
 
 	<repositories>
