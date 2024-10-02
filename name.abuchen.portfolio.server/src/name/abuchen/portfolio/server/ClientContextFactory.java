@@ -1,7 +1,7 @@
 package name.abuchen.portfolio.server;
 
-import javax.inject.Inject;
-import javax.servlet.http.HttpServletRequest;
+import jakarta.inject.Inject;
+import jakarta.servlet.http.HttpServletRequest;
 
 import org.glassfish.hk2.api.Factory;
 

@@ -2,8 +2,8 @@ package name.abuchen.portfolio.server.addons;
 
 import java.util.EnumSet;
 
-import javax.inject.Inject;
-import javax.servlet.DispatcherType;
+import jakarta.inject.Inject;
+import jakarta.servlet.DispatcherType;
 
 import org.eclipse.e4.core.contexts.ContextInjectionFactory;
 import org.eclipse.e4.core.contexts.IEclipseContext;
