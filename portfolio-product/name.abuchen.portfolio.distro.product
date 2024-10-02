@@ -59,7 +59,6 @@
       <feature id="org.eclipse.ecf.filetransfer.feature"/>
       <feature id="org.eclipse.nebula.cwt.feature"/>
       <feature id="org.eclipse.nebula.widgets.cdatetime.feature"/>
-      
       <feature id="name.abuchen.zulu.jre.feature"/>
    </features>
 
@@ -70,8 +69,18 @@
       <plugin id="org.apache.felix.scr" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
-      <plugin id="org.apache.aries.spifly.dynamic.bundle" autoStart="true" startLevel="1" />
       <plugin id="org.eclipse.osgi" autoStart="true" startLevel="-1" />
+      <plugin id="name.abuchen.portfolio.server" autoStart="true" startLevel="4" />
+      <plugin id="org.apache.aries.spifly.dynamic.bundle" autoStart="true" startLevel="1" />
+      <plugin id="org.eclipse.jetty.server" autoStart="true" startLevel="1" />
+      <plugin id="org.glassfish.hk2.api" autoStart="true" startLevel="1" />
+      <plugin id="org.glassfish.jersey.containers.jersey-container-servlet" autoStart="false" startLevel="1" />
+      <plugin id="org.glassfish.jersey.containers.jersey-container-servlet-core" autoStart="false" startLevel="1" />
+      <plugin id="org.glassfish.jersey.core.jersey-client" autoStart="false" startLevel="1" />
+      <plugin id="org.glassfish.jersey.core.jersey-common" autoStart="false" startLevel="1" />
+      <plugin id="org.glassfish.jersey.core.jersey-server" autoStart="true" startLevel="1" />
+      <plugin id="org.glassfish.jersey.inject.jersey-hk2" autoStart="false" startLevel="1" />
+      <plugin id="org.eclipse.jetty.ee10.servlet" autoStart="false" startLevel="1" />
       <property name="osgi.instance.area.default" value="$LOCALAPPDATA$/PortfolioPerformance/workspace" os="win32" />
       <property name="osgi.instance.area.default" value="@user.home/Library/Application Support/name.abuchen.portfolio.product/workspace" os="macosx" />
       <property name="osgi.instance.area.default" value="@user.home/.PortfolioPerformance/workspace" os="linux" />
