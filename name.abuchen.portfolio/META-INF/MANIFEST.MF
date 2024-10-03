@@ -73,6 +73,8 @@ Require-Bundle: org.eclipse.core.runtime,
  org.apache.httpcomponents.core5.httpcore5,
  org.apache.pdfbox,
  json-path,
+ org.glassfish.hk2.api;bundle-version="3.1.1",
+ javassist;bundle-version="3.30.2",
  com.google.gson
 Automatic-Module-Name: name.abuchen.portfolio
 Bundle-ActivationPolicy: lazy
